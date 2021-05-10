@@ -1,0 +1,13 @@
+<gojs-diagram #contractDiagram [initDiagram]='initDiagram' [nodeDataArray]='diagramNodeData'
+    [linkDataArray]='diagramLinkData' [divClassName]='diagramDivClassName' [modelData]='diagramModelData'
+    [skipsDiagramUpdate]='skipsDiagramUpdate' (modelChange)='diagramModelChange($event)'>
+</gojs-diagram>
+
+<div class="zoom zoomSlider">
+    <span>Zoom</span>
+    <button id="zoomSliderOut" class="zoomButton">-</button>
+    <div id="zoomSliderRangeCtn" class="zoomRangeContainer slidecontainer">
+        <input id="zoomSliderRange" class="zoomRangeInput" value="5" type="range" min="0" max="10" disabled="true">
+    </div>
+    <button id="zoomSliderIn" class="zoomButton">+</button>
+</div>
